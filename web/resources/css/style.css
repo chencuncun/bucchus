@@ -1,0 +1,67 @@
+/*バックス（余白距離、タイトル）のサイズ*/
+h1 {
+    margin: 40px;
+    font-size: 30px;
+}
+/* --- へッターサイズ --- */
+div.header {
+font-size: 120%;
+}
+
+/* --- グローバルメニューエリア --- */
+div.header ul.nl {
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;  
+}
+
+/* --- グローバルメニュー項目 --- */
+div.header ul.nl li {
+/*項目のパディング（上下、左右）*/
+margin: 0 60px;  
+display: inline;
+}
+/*小タイトル（余白距離、タイトル）のサイズ*/
+h2 {
+    margin: 40px;
+    font-size: 25px;
+}
+#top_content {
+    display: flex;
+    justify-content: center;
+}
+.entry {
+    margin-bottom: 10px;
+}
+.entry > div > label {
+    position: absolute;
+    float: left;
+}
+.entry > div > div {
+    font-size: 80%;
+    color: #6A5ACD;
+    margin-left: 180px;
+/*    margin-bottom:10px;*/
+    min-height: 25px;
+}
+.entry > div > div > label {
+    margin-left: 265px;
+    margin-bottom:10px;
+    min-height: 25px;
+}
+.entry > div > div > div{
+    margin-left: 390px;
+    min-height: 25px;
+}
+div.right {
+   margin-left: 900px;
+   margin-bottom:30px;
+}
+div.left{
+   margin-left: 250px;
+   margin-bottom:50px;
+}
+.left > div{
+   margin-bottom:30px;
+}

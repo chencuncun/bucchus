@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <meta charset="UTF-8" />
+        <h:outputStylesheet library="css" name="style.css" />
+        <title>bacchus</title>
+    </h:head>
+    <h:body>
+        <h1>バックス</h1>
+        <div class="header">
+            <ul class ="nl">
+                <li><a href="home.xhtml">店舗ホーム</a></li>
+                <li><a href="register.xhtml">新店舗登録</a></li>
+                <li><a href="shopList.xhtml">店舗一覧</a></li>
+                </ul>
+        </div>
+        <h2>新店舗登録</h2>
+        <div id="top_content">
+                <div class="entry">
+                    
+                    <div>
+                        <label>店舗名<font color="#FF0000">（必須）</font> </label>
+                        <div>
+                            <h:inputText id="shopName" value="#{backingBean.shop.shopName}" size="50" maxlength="50" />
+                            全角５０文字以内で <div>入力してください（半角不可）。</div>
+                        </div>
+                           
+                    </div>
+                    
+                    <div>
+                        <label>都道府県<font color="#FF0000">（必須）</font></label>
+                        <div>
+                            <h:inputText id="shopPrefecture" value="#{backingBean.shop.shopPrefecture}" size="12" maxlength="6"/>
+                            <label>全角６文字以内で</label>
+                            <div>入力してください（半角不可）。</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label>市区町村番地<font color="#FF0000">（必須）</font></label>
+                        <div>
+                            <h:inputText id="shopCity" value="#{backingBean.shop.shopCity}" size="50" maxlength="100"/>
+                            全角１００文字以内で<div>入力してください（半角不可）。</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label>建物名</label>
+                        <div>
+                            <h:inputText id="buidingName" value="#{backingBean.shop.buildingName}" size="50" maxlength="50"/>
+                            全角３０文字以内で<div>入力してください（半角不可）。</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label>最寄駅</label>
+                        <div>
+                            <h:inputText id="nearestStation" value="#{backingBean.shop.nearestStation}" size="50" maxlength="50"/>
+                            全角５０文字以内で<div>入力してください（半角不可）。</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label>電話番号<font color="#FF0000">（必須）</font></label>
+                        <div>
+                            <h:inputText id="shopPhoneNumber" value="#{backingBean.shop.shopPhoneNumber}" size="12" maxlength="12"/>
+                            <label>携帯電話番号以外の場合は、</label>
+                            <div>市外局番から入力してください。</div>
+                            <div>半角数字のみ入力可能です（ハイフン不可）。</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label>店舗URL</label>
+                        <div>
+                            <h:inputText id="shopUrl" value="#{backingBean.shop.shopUrl}" size="50" maxlength="2083"/>
+                        </div>
+                    </div>
+                    
+                   <div id="top_content">      
+                       <h:commandButton action="#" value="登録"/>
+                       <h:outputText value="&#160;" />
+                       <h:commandButton action="#" value="リセット" />
+                   </div>
+                   <div>
+                        <label><font color="#FF0000">※エラーメッセージ：</font></label>
+                       
+                  </div>
+                </div>
+                  
+        </div>
+    </h:body>
+</html>
