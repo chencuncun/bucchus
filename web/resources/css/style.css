@@ -1,67 +1,77 @@
 /*バックス（余白距離、タイトル）のサイズ*/
+.layout{
+    width: 980px;
+    margin: 20px auto;
+}
 h1 {
     margin: 40px;
     font-size: 30px;
 }
 /* --- へッターサイズ --- */
 div.header {
-font-size: 120%;
+    font-size: 120%;
 }
 
 /* --- グローバルメニューエリア --- */
 div.header ul.nl {
-margin: 0;
-padding: 0;
-list-style-type: none;
-text-align: center;  
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;  
 }
 
 /* --- グローバルメニュー項目 --- */
 div.header ul.nl li {
-/*項目のパディング（上下、左右）*/
-margin: 0 60px;  
-display: inline;
+    /*項目のパディング（上下、左右）*/
+    margin: 0 60px;  
+    display: inline;
 }
 /*小タイトル（余白距離、タイトル）のサイズ*/
 h2 {
-    margin: 40px;
+    margin: 10px;
     font-size: 25px;
 }
-#top_content {
-    display: flex;
-    justify-content: center;
-}
-.entry {
-    margin-bottom: 10px;
-}
-.entry > div > label {
-    position: absolute;
+.label{
+    width: 200px;
     float: left;
+    font-size: 15px;
+    height: 30px;
 }
-.entry > div > div {
-    font-size: 80%;
-    color: #6A5ACD;
-    margin-left: 180px;
-/*    margin-bottom:10px;*/
-    min-height: 25px;
+.input{
+    width: 200px;
+    float: left;
+    height: 30px;
 }
-.entry > div > div > label {
-    margin-left: 265px;
-    margin-bottom:10px;
-    min-height: 25px;
+.msg{
+    width: 300px;
+    float: left;
+    font-size: 10px;
+    height: 30px;
 }
-.entry > div > div > div{
-    margin-left: 390px;
-    min-height: 25px;
+#entry{
+    width: 700px;
+    margin: 20px auto;
 }
-div.right {
-   margin-left: 900px;
-   margin-bottom:30px;
+.errmsg{
+    width: 500px;
+    font-size: 10px;
 }
-div.left{
-   margin-left: 250px;
-   margin-bottom:50px;
+#section2{
+    float:left;
+    width:700px;
+    height:30px;
+    margin: 20px auto;
+
 }
-.left > div{
-   margin-bottom:30px;
+.entryButtons{
+    width: 200px;
+    margin: 20px auto;
+    height: 20px;
+}
+
+.button{
+    float:left;
+    margin-left:20px;
+    width:80px;
+    height:20px;
 }
