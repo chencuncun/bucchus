@@ -20,16 +20,27 @@
             </div>
             <h2>店舗一覧</h2>
             <div class="right"> 
-                <h:commandButton action="#" value="いいね回数ソート"/>
+                <h:commandButton id="thumbButton" action="#" value="いいね回数ソート"/>
             </div>
-            <div id="section2">
-                <table width="700" height="80" border="2">
-                    <tr><th>店舗名</th><th>いいね回数</th></tr>
-                    <tr><td><a href="#"></a></td><td></td><td><h:commandButton action="#" value="変更"/></td><td><h:commandButton action="#" value="削除"/></td></tr>
-                    <tr><td><a href="#"></a></td><td></td><td><h:commandButton action="#" value="変更"/></td><td><h:commandButton action="#" value="削除"/></td></tr>
-                    <tr><td><a href="#"></a></td><td></td><td><h:commandButton action="#" value="変更"/></td><td><h:commandButton action="#" value="削除"/></td></tr>
-                </table>   
-            </div>
+           
+            <table id="entry">
+                <tr>
+                    <th>店舗名</th>
+                    <th>いいね数</th>
+                    <th>変更</th>
+                    <th>削除</th>
+                </tr>
+                <h:form>
+<!--                    <c:forEach items="" var="">-->
+                        <tr>
+                            <td><a href="">店舗名 </a></td>
+                            <td>いいね数</td>
+                            <td><h:commandButton action="#" value="変更"/> </td>
+                            <td><h:commandButton action="#" value="削除"/> </td>
+                        </tr>
+<!--                    </c:forEach>-->
+                </h:form>
+            </table>
         </div>
     </h:body>
 </html>
